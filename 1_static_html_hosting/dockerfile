@@ -1,0 +1,3 @@
+FROM nginx:1.12.1-alpine
+MAINTAINER piotr - dot - justyna - at - gmail.com
+COPY html /usr/share/nginx/html
