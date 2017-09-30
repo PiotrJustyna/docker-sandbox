@@ -16,4 +16,4 @@ app req respond = respond $
     case pathInfo req of
         x -> index x
 
-index x = responseBuilder status200 [("Content-Type", "text/html")] $ mconcat $ map copyByteString [ BU.fromString $ show x ]
+index x = responseBuilder status200 [("Content-Type", "text/html")] $ mconcat $ map copyByteString [BU.fromString $ show x]
